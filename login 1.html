@@ -1,0 +1,45 @@
+<html>
+<head>
+    <link rel="stylesheet" href="formstyle.css">
+    
+    <title>EliteX</title>
+    
+    
+    
+    <body class="main_bg">
+    <div class="form">
+        <div class="elite">
+<form  align="center" class="oi" action="" method="post">
+  <h1>SIGN IN</h1>
+  <input type="text" class="input-box" id="username" placeholder="User ID"><br> 
+  <input type="password" class="input-box" id="password" placeholder="Password">
+  <input type="submit" class="signup" value="Login">
+    <hr>
+    <p class="or">OR</p>
+    
+    <button type="button" class="signup">LOGIN WITH GOOGLE</button>
+           
+</form>
+
+        </div>
+        </body>
+
+        <script>
+function login(loginForm)
+{
+
+if(loginForm.username.value && loginForm.password.value)
+{
+var username=document.getElementById("username").value;
+document.write('<html><body><h1><center>')
+document.write("Welcome" + " ");
+document.write(username);
+document.write('</center></h1></body></html>');
+}
+else
+alert("Please Enter your Username & Password");
+}
+
+</script>
+ 
+</html>
